@@ -3,10 +3,13 @@ My_List  = ["shalom", 8,4.5, True]
 print(My_List[1:3])
 My_List[0] = "Eden"
 print(My_List[0])
+print(dict(My_List))
 
 # Tuple  ( )
 My_Tuple = ("shalom", 8,4.5, True)
 print(My_Tuple[1:4])
+#My_Tuple[0] = "Eden" #Error
+
 
 #convert from Tuple to List
 #Option #1
