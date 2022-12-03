@@ -2,7 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-URL  = "https://www.sport5.co.il/" # URL that i want to get the data
+URL  = "https://www.sport5.co.il/" # URL that i want to get the data a
 
 html_site = requests.get(URL).content # HTML DATA from site in Bytes
 
