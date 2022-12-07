@@ -1,4 +1,3 @@
-
 import requests
 from bs4 import BeautifulSoup
 
@@ -6,10 +5,10 @@ URL  = "https://worldcup.sport5.co.il/TemplatesExternal/Mondial/MondialStage.asp
 
 html_site = requests.get(URL).content # HTML DATA from site in Bytes
 
+
 soup = BeautifulSoup(html_site, "html.parser") # transfer Bytes to HTML stracture Parsing
 
-
-#
+# #
 result = soup.find_all("h3")
 for i in result:
     print(i.get_text())
