@@ -4,7 +4,8 @@ import os
 list_of_files = os.listdir() # get the list of files in OS library
 print(list_of_files)
 try:
-    os.mkdir("shalom")
+    dir_name = input("enter name of directory to create ")
+    os.mkdir(dir_name)
 except:
     pass
 os.chdir("shalom")
