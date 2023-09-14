@@ -23,8 +23,6 @@ def client_session(client_object,username):
         print(username+" :",data )
         client_object.send("Ack".encode())
 
-for client in clients_objects:
-    client.send("Meesage")
 
 
 def main():
