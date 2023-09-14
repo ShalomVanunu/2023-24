@@ -9,6 +9,7 @@ try:
 except:
     pass
 os.chdir("shalom")
+
 file = open("shalom.txt","w")
 file.write("Shalom Shalom")
 file.close()
