@@ -4,8 +4,6 @@ import threading
 
 class ChatServer:
 
-
-
     def __init__(self,IP,PORT):
         self.IP =IP
         self.PORT =PORT
@@ -34,5 +32,5 @@ class ChatServer:
             except:
                 print("Client Error")
 
-server1 = ChatServer("172.20.129.27", 4444)
+server1 = ChatServer("172.20.130.69", 4444)
 server1.get_clients()
