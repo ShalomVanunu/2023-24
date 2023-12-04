@@ -5,10 +5,7 @@ import ClientSocket
 
 app = Flask(__name__)
 
-IP = "192.168.1.144"
-PORT = 6050
-
-
+IP = "192.168.1.144" # of Flask Server
 
 
 @app.route("/", methods = ["GET", "POST"])
@@ -18,10 +15,13 @@ def first_page():
         name = request.form["Name"]
         phone = request.form["Phone"]
         email = request.form["Email"]
-        client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        client_socket.connect((IP, PORT))
-        client_socket.send(":".join([name,phone,email]).encode())
-        print(client_socket.recv(1024).decode())
+        data = ":".join([name,phone,email])
+        print(type(data))
+        ClientSocket.send_socket_data(data)
+        #client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        #client_socket.connect((IP, PORT))
+        #client_socket.send(":".join([name,phone,email]).encode())
+
     return render_template("index.html")
 
 

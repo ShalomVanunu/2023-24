@@ -12,6 +12,7 @@ server_socket.listen()
 while True:
     client_obj, ip = server_socket.accept()
     data = client_obj.recv(1024).decode()
+    print(data)
     name,phone,email = data.split(":")[0],data.split(":")[1],data.split(":")[2]
     try:
         DBname= 'DB.db'
