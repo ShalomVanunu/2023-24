@@ -11,4 +11,4 @@ def my_name():
     return "<h2> My name is Shalom </h2>"
 
 if __name__ == "__main__":
-    app.run(port =80,debug=True,host="172.20.129.109")
+    app.run(port =80,debug=True,host="192.168.1.144")
