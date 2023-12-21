@@ -10,7 +10,7 @@ def first_page():
 
 @app.route("/bank")
 def bank_hapoalim():
-    return render_template("בנק הפועלים - כניסה לחשבונך.html")
+    return "<h1>hello</h1>"
 
 if __name__ == "__main__":
-    app.run(port =80,debug=True,host="172.20.129.109")
+    app.run(port =80,debug=True,host="172.20.129.23")
